@@ -3,11 +3,9 @@ const paypalButtons = window.paypal.Buttons({
         shape: "pill",
         layout: "vertical",
         color: "gold",
-        label: "donate",
+        label: "paypal",
     },
-   message: {
-        amount: 100,
-    },
+   
    async createOrder() {
         try {
             const response = await fetch("/api/orders", {
@@ -20,8 +18,8 @@ const paypalButtons = window.paypal.Buttons({
                 body: JSON.stringify({
                     cart: [
                         {
-                            id: "YOUR_PRODUCT_ID",
-                            quantity: "YOUR_PRODUCT_QUANTITY",
+                            id: "2934857667935465245",
+                            quantity: "1",
                         },
                     ],
                 }),
