@@ -1,10 +1,19 @@
-<h1>Pay Horror Remake:</h1>
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    Pay Horror Remake
+    <div class="card-content">
+      <p>Support the development of the Horror Remake project by making a donation.</p>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PayPal JS SDK Standard Integration</title>
     </head>
     <body>
         <div id="paypal-button-container"></div>
@@ -13,10 +22,13 @@
        
         <!-- Initialize the JS-SDK -->
         <script
-            src="https://www.paypal.com/sdk/js?client-id=AQ1q8U-kuiLQFvWp3SdlJBb2Qnh-ST_ziGuw9aWEwG_Y7MyRYTpaKd3rN0OLBfAcR81AbHzrHTX4ikXQ&buyer-country=US&currency=USD&components=buttons&enable-funding=card&disable-funding=venmo,paylater"
+            src="https://www.paypal.com/sdk/js?client-id=test&buyer-country=US&currency=USD&components=buttons&enable-funding=venmo,paylater,card"
             data-sdk-integration-source="developer-studio"
         ></script>
         <script src="app.js"></script>
        
     </body>
+  </div>
+
+</body>
 </html>
